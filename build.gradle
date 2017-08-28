@@ -1,0 +1,23 @@
+group 'GifLib1'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+}
+buildscript{
+    repositories{
+        mavenCentral()
+    }
+    dependencies{
+        classpath 'org.springframework.boot:spring-boot-gradle-plugin:1.4.3.RELEASE'
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'org.springframework.boot'
+
+dependencies {
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-thymeleaf', version: '1.4.3.RELEASE'
+}
